@@ -4,10 +4,11 @@ html{
     font-size: 62.5%;
 }
 
-.Syne{
-    font-family: "Syne", serif;
-}
+@theme{
+    --color-body-bg: #1a1a1a;
+    --color-main-color: #ff9142;
+    --color-text-color: #a8a8a8;
 
-.Rubik{
-    font-family: "Rubik", serif;
+    --font-Syne: "Syne", serif;
+    --font-Rubik: "Rubik", serif;
 }

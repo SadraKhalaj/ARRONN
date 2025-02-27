@@ -18,15 +18,15 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-[#1A1A1A] overflow-x-hidden">
+  <body class="bg-body-bg overflow-x-hidden">
     <main>
-      <header class="px-[15rem] pt-[3.2rem]">
-        <nav class="w-full flex justify-between items-center text-white/50">
+      <header class="px-[15rem] pt-[3.2rem] max-sm:px-[2rem]">
+        <nav class="w-full flex justify-between items-center text-white/50 max-sm:hidden ">
           <ul>
             <img src="./images/Brand-logo.png" alt="" />
           </ul>
           <ul
-            class="flex items-center justify-between gap-11 text-[1.4rem] font-medium Rubik"
+            class="flex items-center justify-between gap-11 text-[1.4rem] font-medium font-Rubik"
           >
             <li><a href="./index.html">HOME</a></li>
             <li><a href="./index.html">ABOUT ME</a></li>
@@ -40,11 +40,21 @@
             </li>
           </ul>
         </nav>
+        <nav class="nav-mobile hidden w-full max-sm:flex max-sm:justify-between max-sm:items-center">
+           <ul>
+            <img src="./images/Brand-logo.png" alt="" />
+          </ul>
+          <ul>
+            <li>
+              <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+            </li>
+          </ul>
+        </nav>
         <div
-          class="wrapper flex flex-col justify-evenly h-[65rem] items-center"
+          class="wrapper flex flex-col justify-evenly h-[65rem] items-center max-sm:h-[500px]"
         >
           <h1
-            class="Syne text-[#fff] text-[7.2rem] text-center font-bold leading-32 relative"
+            class="font-Syne text-[#fff] text-[7.2rem] text-center font-bold leading-32 relative max-sm:text-7xl max-sm:mt-[-30px]"
           >
             Adaptive Logo Design <br />
             for Your Brand
@@ -55,7 +65,7 @@
               viewBox="0 0 917 651"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="absolute top-[-250px] left-[200px]"
+              class="absolute top-[-250px] left-[200px] max-sm:hidden"
             >
               <g filter="url(#filter0_f_101_462)">
                 <path
@@ -90,7 +100,7 @@
             </svg>
           </h1>
           <a
-            class="flex items-center text-[1.8rem] text-white bg-[#FF9142] w-[24.2rem] h-[6.5rem] justify-center rounded-4xl gap-7"
+            class="flex items-center text-[1.8rem] text-white bg-main-color w-[24.2rem] h-[6.5rem] justify-center font-Rubik rounded-4xl gap-7 max-sm:w-full max-sm:h-[8rem] max-sm:font-bold max-sm:text-[2.2rem]"
             href=""
           >
             Explore works
@@ -100,6 +110,8 @@
               viewBox="0 0 18 12"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              class="max-sm:hidden"
+              
             >
               <path
                 d="M1 5.5H17"
@@ -120,25 +132,32 @@
         </div>
       </header>
       <section
-        class="about-me px-[15rem] mt-[10rem] flex w-full items-center justify-between"
+        class="about-me px-[15rem] mt-[10rem] flex w-full items-center justify-between max-sm:px-[2rem] max-sm:mt-[2rem]"
       >
-        <div class="left-part w-[49%]">
+        <div class="left-part w-[49%] max-sm:w-full">
           <h1
-            class="Syne text-[#fff] text-[5.6rem] font-bold leading-29 relative"
+            class="font-Syne text-[#fff] text-[5.6rem] font-bold leading-29 relative max-sm:text-center max-sm:text-[5rem]"
           >
-            Let’s get know about me closer
+            Let’s get know <br> about me closer
           </h1>
-          <p class="Rubik text-[1.8rem] text-[#A8A8A8]">
-            Aaronn is a New York-based visual designer focusing on branding and
-            visual identity. Her portfolio showcases her wide range of work,
+          <br>
+          <br>
+          <p class="font-Rubik text-[1.8rem] text-text-color max-sm:text-center">
+            Aaronn is a New York-based visual designer focusing on branding <br> and
+            visual identity. Her portfolio showcases her wide range of <br> work,
             spanning books, posters and web design.
           </p>
-          <div class="button py-[5rem] absolute">
-            <a href="" class="flex items-center text-[1.5rem] text-white Rubik bg-[#FF9142] w-[28.8rem] h-[5.9rem] justify-center rounded-4xl">Discover More About Me</a>
+          <br>
+          <br>
+          \<div class=" max-sm:flex max-sm:justify-center hidden">
+            <a href="" class="flex items-center text-[1.5rem] text-white font-Rubik bg-main-color w-[28.8rem] h-[5.9rem] justify-center rounded-4xl max-sm:w-full max-sm:h-[8rem] max-sm:font-bold max-sm:text-[2.2rem]">Discover More About Me</a>
+          </div>
+          <div class="button py-[5rem] absolute max-sm:hidden">
+            <a href="" class="flex items-center text-[1.5rem] text-white font-Rubik bg-main-color w-[28.8rem] h-[5.9rem] justify-center rounded-4xl">Discover More About Me</a>
           </div>
         </div>
-        <div class="right-part w-[40%]">
-          <img class="w-full" src="./images/man-home.png" alt="" />
+        <div class="right-part w-[40%] max-sm:hidden">
+          <img class="w-full max-sm:hidden" src="./images/man-home.png" alt="" />
         </div>
       </section>
       <svg
@@ -147,7 +166,7 @@
         viewBox="0 0 575 675"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="relative top-[-610px]"
+        class="relative top-[-610px] max-sm:hidden"
       >
         <g filter="url(#filter0_f_101_460)">
           <path
@@ -182,9 +201,9 @@
       </svg>
 
 
-       <div class=" w-full title flex flex-col items-center gap-[5rem] relative top-[-30rem]">
-              <h1 class="text-[6.2rem] text-[#FFFFFF] syne font-bold">My Projects Highlight</h1>
-              <svg class="absolute top-[-220px] right-0" width="741" height="581" viewBox="0 0 741 581" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <div class=" w-full title flex flex-col items-center gap-[5rem] relative top-[-30rem] max-sm:top-[20rem] max-sm:px-[2rem]">
+              <h1 class="text-[6.2rem] text-[#FFFFFF] font-Syne font-bold max-sm:text-[5rem]">My Projects Highlight</h1>
+              <svg class="absolute top-[-220px] max-sm:hidden right-0" width="741" height="581" viewBox="0 0 741 581" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_101_461)">
                 <path d="M388.282 380.439C450.966 376.315 491.877 353.176 531.67 299.342C612.284 190.285 141.291 155.641 206.885 275.453C248.243 350.996 308.215 385.706 388.282 380.439Z" fill="white" fill-opacity="0.2"/>
                 </g>
@@ -197,23 +216,23 @@
                 </defs>
                 </svg>
                 
-                <a class=" text-[1.3rem] border-1 border-[#FF9142] bg-transparent text-[#F4F7FA] flex justify-center items-center w-[242px] h-[65px] rounded-4xl gap-[25px] font-bold tracking-widest Rubik" href="">Explore works <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class=" text-[1.3rem] border-1 border-main-color bg-transparent text-[#F4F7FA] flex justify-center items-center w-[242px] h-[65px] rounded-4xl gap-[25px] font-bold tracking-widest font-Rubik max-sm:text-[1.6rem]" href="">Explore works <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="max-sm:hidden">
                   <path d="M1 5.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M12 1L17 6L12 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                   </a>
             </div>
-            <div class="container-cards flex flex-wrap px-[15rem] pt-[10rem] gap-y-25 justify-between relative top-[-33rem] w-full">
+            <div class="container-cards flex flex-wrap px-[15rem] pt-[10rem] gap-y-25 justify-between relative top-[-33rem] w-full max-sm:top-[20rem] max-sm:px-[2rem] max-sm:justify-center">
 
               <div class="card max-w-[50rem] h-[76.8rem] flex flex-col justify-between">
                 <img src="./images/1.png" alt="">
                 <div class="informaition h-[12rem] flex flex-col justify-between gap-[1.5rem]">
-                  <h3 class="flex items-center gap-10 text-[2.4rem] text-white syne w-[57.3rem] h-[3.2rem] font-bold">Brand Journey Improvements<div class="w-[4.8rem] h-[0.1rem] bg-[#FF9142]"></div></h3> 
-                  <div class="Rubik flex justify-between text-[1.4rem] w-[19%] text-[#606060]">
+                  <h3 class="flex items-center gap-10 text-[2.4rem] text-white font-Syne w-[57.3rem] h-[3.2rem] font-bold">Brand Journey Improvements<div class="w-[4.8rem] h-[0.1rem] bg-[#FF9142]"></div></h3> 
+                  <div class="font-Rubik flex justify-between text-[1.4rem] w-[19%] text-[#606060]">
                    <p>Client:</p>
                    <p class="text-white">Organc</p>
                   </div>
-                  <div class="Rubik flex justify-between text-[1.4rem] w-[40%] text-[#606060]">
+                  <div class="font-Rubik flex justify-between text-[1.4rem] w-[40%] text-[#606060]">
                     <p>Work:</p>
                     <p class="text-white">Branding</p>
                     <p class="text-white">Logo design</p>
@@ -223,12 +242,12 @@
               <div class="card max-w-[50rem] h-[76.8rem] flex flex-col justify-between">
                 <img src="./images/2.png" alt="">
                 <div class="informaition h-[12rem] flex flex-col justify-between gap-[1.5rem]">
-                  <h3 class="flex items-center gap-10 text-[2.4rem] text-white syne w-[38.8rem] h-[3.2rem] font-bold">Brand Grouping<div class="w-[4.8rem] h-[0.1rem] bg-[#FF9142]"></div></h3> 
-                  <div class="Rubik flex justify-between text-[1.4rem] w-[14%] text-[#606060]">
+                  <h3 class="flex items-center gap-10 text-[2.4rem] text-white font-Syne w-[38.8rem] h-[3.2rem] font-bold">Brand Grouping<div class="w-[4.8rem] h-[0.1rem] bg-[#FF9142]"></div></h3> 
+                  <div class="font-Rubik flex justify-between text-[1.4rem] w-[14%] text-[#606060]">
                    <p>Client:</p>
                    <p class="text-white">FR</p>
                   </div>
-                  <div class="Rubik flex justify-between text-[1.4rem] w-[40%] text-[#606060]">
+                  <div class="font-Rubik flex justify-between text-[1.4rem] w-[40%] text-[#606060]">
                     <p>Work:</p>
                     <p class="text-white">Branding</p>
                     <p class="text-white">Logo design</p>
@@ -238,12 +257,12 @@
               <div class="card max-w-[50rem] h-[76.8rem] flex flex-col justify-between">
                 <img src="./images/3.png" alt="">
                 <div class="informaition h-[12rem] flex flex-col justify-between gap-[1.5rem]">
-                  <h3 class="flex items-center gap-10 text-[2.4rem] text-white syne w-[33.6rem] h-[3.2rem] font-bold">NFT Glimps<div class="w-[4.8rem] h-[0.1rem] bg-[#FF9142]"></div></h3> 
-                  <div class="Rubik flex justify-between text-[1.4rem] w-[25%] text-[#606060]">
+                  <h3 class="flex items-center gap-10 text-[2.4rem] text-white font-Syne w-[33.6rem] h-[3.2rem] font-bold">NFT Glimps<div class="w-[4.8rem] h-[0.1rem] bg-[#FF9142]"></div></h3> 
+                  <div class="font-Rubik flex justify-between text-[1.4rem] w-[25%] text-[#606060]">
                    <p>Client:</p>
                    <p class="text-white">Rumanda</p>
                   </div>
-                  <div class="Rubik flex justify-between text-[1.4rem] w-[27%] text-[#606060]">
+                  <div class="font-Rubik flex justify-between text-[1.4rem] w-[27%] text-[#606060]">
                     <p>Work:</p>
                     <p class="text-white">NFT Design</p>
                   </div>
@@ -252,12 +271,12 @@
               <div class="card max-w-[50rem] h-[76.8rem] flex flex-col justify-between">
                 <img src="./images/4.png" alt="">
                 <div class="informaition h-[12rem] flex flex-col justify-between gap-[1.5rem]">
-                  <h3 class="flex items-center gap-10 text-[2.4rem] text-white syne w-[42.5rem] h-[3.2rem] font-bold">Brand Suggestions<div class="w-[4.8rem] h-[0.1rem] bg-[#FF9142]"></div></h3> 
-                  <div class="Rubik flex justify-between text-[1.4rem] w-[18%] text-[#606060]">
+                  <h3 class="flex items-center gap-10 text-[2.4rem] text-white font-Syne w-[42.5rem] h-[3.2rem] font-bold">Brand Suggestions<div class="w-[4.8rem] h-[0.1rem] bg-[#FF9142]"></div></h3> 
+                  <div class="font-Rubik flex justify-between text-[1.4rem] w-[18%] text-[#606060]">
                    <p>Client:</p>
                    <p class="text-white">T3d</p>
                   </div>
-                  <div class="Rubik flex justify-between text-[14px] w-[24%] text-[#606060]">
+                  <div class="font-Rubik flex justify-between text-[14px] w-[24%] text-[#606060]">
                     <p>Work:</p>
                     <p class="text-white">NFT logo</p>
                   </div>
@@ -265,14 +284,14 @@
               </div>
             </div>
           </section>
-          <section class="px-[15rem] mt-[30rem] flex justify-between relative top-[-33rem] ">
+          <section class="px-[15rem] mt-[30rem] flex justify-between relative top-[-33rem] max-sm:top-[-1rem] max-sm:px-[2rem] max-sm:justify-center max-sm:text-center">
             <div class="left flex flex-col gap-[4rem] w-[74%]">
-              <h2 class="text-white text-[6.4rem] font-bold Syne">Testimonial</h2>
-            <p class="text-[#949494] text-[1.8rem] font-light Rubik">“Aaronn was fantastic to work with from start to finish. We were looking for a simple, stand-out logo and he delivered. I tried designing the logo myself thinking I wouldn’t need to pay the money for a professional graphic designer but I was very wrong. Working with Aaronn was worth every penny and was surprisingly affordable! I remember him saying simplicity is key to a successful logo and boy he was right. I can’t thank Aaronn enough for his effort and professionalism. I would recommend him to anyone looking for a design!”</p>
-            <span class="text-white text-[2.4rem] font-bold Syne">-Martin lee</span>
+              <h2 class="text-white text-[6.4rem] font-bold font-Syne max-sm:text-[6rem]">Testimonial</h2>
+            <p class="text-[#949494] text-[1.8rem] font-light font-Rubik max-sm:text-[1.3rem]">“Aaronn was fantastic to work with from start to finish. We were looking for a simple, stand-out logo and he delivered. I tried designing the logo myself thinking I wouldn’t need to pay the money for a professional graphic designer but I was very wrong. Working with Aaronn was worth every penny and was surprisingly affordable! I remember him saying simplicity is key to a successful logo and boy he was right. I can’t thank Aaronn enough for his effort and professionalism. I would recommend him to anyone looking for a design!”</p>
+            <span class="text-white text-[2.4rem] font-bold font-Syne">-Martin lee</span>
             </div>
             <div class="right ">
-              <svg width="163" height="95" viewBox="0 0 163 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="163" height="95" viewBox="0 0 163 95" fill="none" xmlns="http://www.w3.org/2000/svg" class="max-sm:hidden">
                 <mask id="path-1-outside-1_101_422" maskUnits="userSpaceOnUse" x="0" y="0" width="163" height="95" fill="black">
                 <rect fill="white" width="163" height="95"/>
                 <path d="M97 1.23199L92.968 19.088C96.04 20.624 99.304 23.984 102.76 29.168C106.024 34.352 107.944 40.016 108.52 46.16L88.936 49.328V93.392H161.8V66.608C161.8 48.944 156.712 34.256 146.536 22.544C136.168 10.832 119.656 3.72799 97 1.23199ZM9.73599 1.23199L5.70399 19.088C8.776 20.624 12.04 23.984 15.496 29.168C18.76 34.352 20.68 40.016 21.256 46.16L1.67199 49.328V93.392H74.536V66.608C74.536 48.944 69.448 34.256 59.272 22.544C48.904 10.832 32.392 3.72799 9.73599 1.23199Z"/>
@@ -282,7 +301,7 @@
                 
             </div>
           </section>
-          <svg class="absolute top-[355rem]" width="486" height="675" viewBox="0 0 486 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="absolute top-[355rem] max-sm:hidden" width="486" height="675" viewBox="0 0 486 675" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_f_101_405)">
             <path d="M54.1869 473.805C149.282 467.548 211.347 432.446 271.716 350.776C394.011 185.329 -320.514 132.772 -221.004 314.534C-158.261 429.139 -67.2795 481.796 54.1869 473.805Z" fill="white" fill-opacity="0.18"/>
             </g>
@@ -294,22 +313,22 @@
             </filter>
             </defs>
             </svg>
-            <footer class="bg-[#131313] w-[100vw] h-[74rem] ">
-                <div class="flex justify-center items-center flex-col pt-[6rem]">
-                  <h1 class="Syne text-[#ff9142] text-[3rem] ">Get in Touch With Us</h1>
-                  <p class="Syne text-[9rem] text-white">info@aaronn.com <hr></p>
+            <footer class="bg-[#131313] w-[100vw] h-[74rem] max-sm:mt-[7rem]">
+                <div class="flex justify-center items-center flex-col pt-[6rem] max-sm:flex-row max-sm:px-[2rem] max-sm:gap-[10px]">
+                  <h1 class="font-Syne text-main-color text-[2rem] ">Get in Touch With Us</h1>
+                  <p class="font-Syne text-[9rem] text-white max-sm:text-[2rem]">info@aaronn.com <hr></p>
             </div>
-            <div class="flex px-[15rem] justify-between items-center pt-[18rem]">
+            <div class="flex px-[15rem] justify-between items-center pt-[18rem] max-sm:flex-col max-sm:gap-[20px] max-sm:px-[2rem] max-sm:pt-[10rem]">
               <img src="./images/footer-icon.png" alt="">
-              <img src="./images/sign.png" alt="">
+              <img class="pt-[2rem]" src="./images/sign.png" alt="">
               <img src="./images/social.png" alt="">
             </div>
-           <div class="px-[15rem] pt-[5rem]">
+           <div class="px-[15rem] pt-[5rem] max-sm:px-[2rem]">
              <hr class=" bg-[#949494]">
            </div>
            <br>
            <br>
-           <p class="text-white text-5xl Syne flex items-center justify-center">© 2023. Ideapeel. All rights reserved.</p>
+           <p class="text-white text-5xl font-Syne flex items-center justify-center max-sm:mt-[50px]">© 2023. Ideapeel. All rights reserved.</p>
             </footer>
     </main>
   </body>
